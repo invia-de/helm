@@ -4,6 +4,8 @@
 # You can change the default config with `make cnf=special.env build`
 
 VERSION ?= ''
+DOCKER_REPO ?= ''
+BUILD_NAME ?= ''
 
 cnf ?= .env
 include $(cnf)
@@ -22,8 +24,6 @@ help: ## This help.
 
 # DOCKER TASKS
 # ------------------------------------------------------------------------------
-
-BUILD_NAME := $(DOCKER_REPO)/$(NAMESPACE)/$(APP_NAME)
 
 # Build the container
 build: ## Build the container
