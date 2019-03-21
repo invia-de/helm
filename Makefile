@@ -23,7 +23,7 @@ help: ## This help.
 # DOCKER TASKS
 # ------------------------------------------------------------------------------
 
-BUILD_NAME := $(DOCKER_REPO)/$(TILLER_NAMESPACE)/$(APP_NAME)
+BUILD_NAME := $(DOCKER_REPO)/$(NAMESPACE)/$(APP_NAME)
 
 # Build the container
 build: ## Build the container
